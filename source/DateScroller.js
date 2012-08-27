@@ -41,7 +41,7 @@ enyo.kind({
 		]};
 		this.createComponents([component]);
 		
-		this.$.repeater.setRows(this.items.length);
+		this.$.repeater.setCount(this.items.length);
 		
 		if (this.params.touchEvents) {
 			// Make snap-back a bit quicker
@@ -224,7 +224,7 @@ enyo.kind({
 		
 		this.$.dateScrollerColumn.updateItems(this.items);
 		
-		this.repeater.setRows(this.items.length);
+		this.repeater.setCount(this.items.length);
 		this.repeater.build();
 		this.repeater.render();
 	}
